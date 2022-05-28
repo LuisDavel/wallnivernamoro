@@ -1,0 +1,276 @@
+/* Header */
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #201d24;
+    margin: 0;
+}
+
+.menu__item a{
+    text-decoration: none;
+}
+
+header{
+    max-width: 100%;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #f5f7f010; */
+    border: 1px solid white;
+    width: calc(100vw  - 6px);
+}
+
+.logo{
+    color: white;
+    padding: 1em;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu__item{
+    margin: 0 1em 0 0;
+    padding: 0;
+    counter-increment: line-number;
+    font-family: 'Roboto Mono';
+    padding: 1em;
+    list-style: none;
+}
+
+.socorro{
+    color: white;
+}
+
+.socorro:hover{
+    text-decoration: underline;
+}
+
+/* corpo */
+
+.container{
+    border: 1px solid white;
+    height: calc(100vh  - 55px);
+    width: calc(100vw  - 6px);
+}
+
+.container__card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 55px);;
+}
+
+.menu-login{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid white;
+    width: 800px;
+    height: 800px;
+    border-radius: 4px;
+    box-shadow: 15px 12px 15px black;
+}
+
+.menu-login__menu{
+    border-bottom: 3px solid white;
+    height: 1.5em;
+}
+
+.menu-login__paragraf{
+    color: white;
+    font-size: 1.8em;
+    padding-top: 1em;
+    text-align: center;
+}
+
+.menu-login__paragraf p{
+    margin-bottom: 1em;
+}
+
+.container__card--off{
+
+    display: none;
+   
+}
+
+.diminui, .diminui--port1, .diminui--port2, .diminui--port3, .diminui--port4, .diminui--port5 {
+    display: none;
+}
+
+@media screen and (min-width: 0px) {
+    .menu-login__paragraf{
+        display: none;
+    } 
+
+    .container__card--off{
+        padding: 1em;
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+    }
+
+    .container__card--off input{
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (min-width: 350px) {
+
+    p{
+        font-size: 20px;
+    }
+
+    .diminui, .menu-login__paragraf{
+        display: block;
+    }
+
+    .diminui--port3{
+        display: block;
+    }
+
+    .diminui--port2{
+        display: block;
+    }
+
+    .diminui--port1{
+        display: block;
+    }
+
+    .diminui--port4 {
+        display: block;
+    }
+    .diminui--port5{
+        display: block;
+    }
+
+    .container__card--off{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 550px) {
+    
+    .diminui--port3{
+        display: block;
+    }
+
+    .diminui--port2{
+        display: block;
+    }
+
+    .diminui--port1{
+        display: block;
+    }
+
+    .diminui--port4 {
+        display: block;
+    }
+
+    .diminui, .menu-login__paragraf{
+        display: block;
+    }
+
+    .diminui--port5{
+        display: none;
+    }
+
+    .container__card--off{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    
+    .diminui--port3{
+        display: block;
+    }
+
+    .diminui--port2{
+        display: block;
+    }
+
+    .diminui--port1{
+        display: block;
+    }
+
+    .diminui, .menu-login__paragraf{
+        display: block;
+    }
+
+    .diminui--port4, .diminui--port5 {
+        display: none;
+    }
+
+    .container__card--off{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .diminui--port2{
+        display: block;
+    }
+
+    .diminui--port1{
+        display: block;
+    }
+
+    .diminui, .menu-login__paragraf{
+        display: block;
+    }
+
+
+    .diminui--port3, .diminui--port4, .diminui--port5 {
+        display: none;
+    }
+
+    .container__card--off{
+        display: none;
+    }
+} 
+
+@media screen and (min-width: 850px) {
+    .diminui--port1{
+        display: block;
+    }
+
+    .diminui, .menu-login__paragraf{
+        display: block;
+    }
+
+
+    .diminui--port2, .diminui--port3, .diminui--port4, .diminui--port5 {
+        display: none;
+    }
+
+    .container__card--off{
+        display: none;
+    }
+} 
+
+@media screen and (min-width: 950px) {
+    .diminui, .menu-login__paragraf{
+        display: block;
+    }
+
+    .diminui--port1, .diminui--port2, .diminui--port3, .diminui--port4, .diminui--port5 {
+        display: none;
+    }
+
+    .container__card--off{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .container__card--off, .diminui{
+        display: none;
+    }
+}

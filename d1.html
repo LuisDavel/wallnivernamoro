@@ -1,0 +1,103 @@
+<?php
+  include('php/conexao.php');
+?>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/d1.css">
+    <link rel="shortcut icon" href="img/favicon.gif">
+    <title>Charada</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <p>LOGO</p>
+        </div>
+        <nav class="navbar">
+            <ul class="menu">
+                <li class="menu__item"><a class="socorro" href="">Inicio</a></li>
+                <li class="menu__item"><a class="socorro" href="">Sobre</a></li>
+                <li class="menu__item"><a class="socorro" href="https://api.whatsapp.com/send?1=pt_BR&phone=5548998447068">Socorro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="container__card">
+            <section class="menu-login">
+                <div class="menu-login__menu"></div>
+                    <div class="menu-login__paragraf">
+                        <p>Te amo pra sempre ...</p>
+                        <p>Por mais longe que você esteja,</p>
+                        <p>Por mais perto que você se encontre,</p>    
+                        <p>Meu amor por você se mantera o mesmo,</p>
+                        <p>A intensidade do meu amor por você é tão grande,</p>
+                        <p>Que para ver as coisas que realmente importão, devemos <strong style="text-decoration:underline;">diminuir</strong>,</p>
+                        <p class="diminui">E diminuindo consigo perceber que o meu mundo gira entorno de você,</p>
+                        <p class="diminui diminui--port1">Muitos dizem que "pare sempre" é muito tempo,</p>
+                        <p class="diminui diminui--port2">Que nada é para sempre,</p>
+                        <p class="diminui diminui--port3">Acredito, que sempre existe alguém para ser 'pra sempre',</p>
+                        <p class="diminui diminui--port4">Eu sinto que pro meu coração ... Para os meus pensamentos e para minha alma,</p>
+                        <p class="diminui diminui--port5">Você é esse alguém, eu te amo, eu te admiro, eu sou teu maior fã, você é a pessoa que eu mais desejo neste mundo.</p>
+                    </div>
+                    <section class="container__card--off">
+                        <div>
+                            <h1 style="text-decoration:underline; margin-bottom: 10px;">Você conhece o seu namorado ?</h1>
+                            <p>Seu namorado é muito ...?</p> 
+                            <input type="text" id="text" onchange="onchanged()">
+                            <p>Ele te acha muito ?</p>                        
+                            <input type="text" id="text1" onchange="onchanged()">
+                            <p>Anime preferido ?</p>
+                            <input type="text" id="text2" onchange="onchanged()" >
+                            <p>A viagem mais importante pra ele?</p>
+                            <input type="text" id="text3" onchange="onchanged()">
+                            <p>O que ele mais ama em você ?</p>
+                            <input type="text" id="text4" onchange="onchanged()">
+                            <p>------</p>
+                            
+                        </div>
+                     
+                        <p>Agora que você ja leu tudo isso, encontre nas entrelinhas, o que ele quer dizer para você ❤️ </p>
+                        <p>------</p>
+                        
+                        <p style="margin-bottom:1em ;">O que ele quer dizer ?</p>
+                        <input id="text5" type="text"><button onclick="checkBtt()"> CHECK </button>
+                    
+                    </section>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
+
+<script>
+    var t = document.getElementById("text");
+    var e = document.getElementById("text1");
+    var a = document.getElementById("text2");
+    var m = document.getElementById("text3");
+    var o = document.getElementById("text4");
+ 
+
+    function onchanged(){
+        // console.log(x)
+        t.value != 'timido' ?  t.style.backgroundColor = 'red' :  t.style.backgroundColor = 'green';
+        e.value != 'incrivel' ?  e.style.backgroundColor = 'red' :  e.style.backgroundColor = 'green';
+        a.value != 'your lie in april' ?  a.style.backgroundColor = 'red' :  a.style.backgroundColor = 'green';
+        m.value != 'timbó' ?  m.style.backgroundColor = 'red' :  m.style.backgroundColor = 'green';
+        o.value != 'tudo' ?  o.style.backgroundColor = 'red' :  o.style.backgroundColor = 'green';
+    }
+
+    function checkBtt(){
+        var c = document.getElementById("text5").value + "";
+
+        console.log(c);
+        if(c == 'te amo'){
+            console.log('certo')
+        }else{
+            console.log('Errado')
+        };
+    }
+    
+</script>

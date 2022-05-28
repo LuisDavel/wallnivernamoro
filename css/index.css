@@ -1,0 +1,154 @@
+/* Header */
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #201d24;
+    margin: 0;
+}
+
+.menu__item a{
+    text-decoration: none;
+}
+
+header{
+    max-width: 100%;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #f5f7f010; */
+    border: 1px solid white;
+    width: calc(100vw  - 6px);
+}
+
+.logo{
+    color: white;
+    padding: 1em;
+}
+
+.menu{
+    display: flex;
+
+}
+
+.menu__item{
+    margin: 0 1em 0 0;
+    padding: 0;
+    counter-increment: line-number;
+    font-family: 'Roboto Mono';
+    padding: 1em;
+    list-style: none;
+}
+
+.socorro{
+    color: white;
+}
+
+.socorro:hover{
+    text-decoration: underline;
+}
+
+/* corpo */
+
+.container{
+    position: relative;
+    width: calc(100vw  - 6px);
+    border: 1px solid white;
+    height: calc(100vh  - 55px);
+}
+
+.container__card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 55px);;
+}
+
+.menu-login{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid white;
+    width: 400px;
+    height: 300px;
+    border-radius: 4px;
+    box-shadow: 15px 12px 15px black;
+}
+
+.menu-login__menu{
+    border-bottom: 3px solid white;
+    height: 1.5em;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+}
+
+.form__card--danger{
+    color:red;
+}
+
+.form__card{
+    display: flex;
+    flex-direction: column; 
+    padding: 0.2em; 
+    margin-left: 1em;
+}
+
+.form__card label{
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    color: white;
+}
+
+.form__card__input{
+    color: white;
+    background: none;
+    max-width: 50%;
+    border: none;
+    background-color: #161518;
+    border-bottom: 3px solid white;
+    border-radius: 2px;
+    padding: 0.2em;
+    margin-bottom: 0.5em;
+}
+
+.form__card__input--ultimo{
+    margin-bottom: 1.5em;  
+}
+
+
+.form__card .btt{
+    width: 50%;
+    padding: 0.5em;
+}
+
+.form__card .n::after{
+    content: " Logar ";
+}
+
+.form__card--btt{
+    margin-bottom: 1.5em;  
+}
+
+.form__card:hover .n::after{
+    content: " e4T4am0";
+}
+
+.form__card .btt:hover{
+    background-color: #201d24;
+}
+
+.form__card p{
+    margin-top: 50px;
+}
+
+.form__card a{
+    font-size: 10px;
+   color: white;
+    padding: 1px;
+}

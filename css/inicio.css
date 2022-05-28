@@ -1,0 +1,107 @@
+/* Header */
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #201d24;
+    margin: 0;
+}
+
+.menu__item a{
+    text-decoration: none;
+}
+
+header{
+    max-width: 100%;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #f5f7f010; */
+    border: 1px solid white;
+    width: calc(100vw  - 6px);
+}
+
+.logo{
+    color: white;
+    padding: 1em;
+}
+
+.menu{
+    display: flex;
+
+}
+
+.menu__item{
+    margin: 0 1em 0 0;
+    padding: 0;
+    counter-increment: line-number;
+    font-family: 'Roboto Mono';
+    padding: 1em;
+    list-style: none;
+}
+
+.socorro{
+    color: white;
+}
+
+.socorro:hover{
+    text-decoration: underline;
+}
+
+/* corpo */
+
+.container{
+    position: relative;
+    width: calc(100vw  - 6px);
+    border: 1px solid white;
+    height: calc(100vh  - 55px);
+}
+
+.container__card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 55px);;
+}
+
+.menu-login{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid white;
+    width: 400px;
+    height: 300px;
+    border-radius: 4px;
+    box-shadow: 15px 12px 15px black;
+}
+
+.menu-login__menu{
+    border-bottom: 3px solid white;
+    height: 1.5em;
+}
+
+.menu-login__paragraf{
+    color: white;
+    font-size: 1.8em;
+    padding-top: 1em;
+    text-align: center;
+}
+
+.menu-login__paragraf p{
+    margin-bottom: 1em;
+}
+
+.menu-login__button{
+    color: white;
+    opacity: 0;
+    padding: 0.2em;
+    font-size: 1.0em;
+    text-decoration: none;
+    border: 2px solid white;
+}
+
+.menu-login__button:hover{
+    opacity: 100%;
+}
